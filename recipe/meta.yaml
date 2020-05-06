@@ -1,4 +1,4 @@
-{% set version = "0.9.3" %}
+{% set version = "0.10.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/renv_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/renv/renv_{{ version }}.tar.gz
-  sha256: 19982e16fc19483ef5fc3fe85e3fe3cc76655518bfb386484065117ed7735e09
+  sha256: 2e563164cf27576f9a0fab941f123e7ad93521ec62045f91b1093660f024c27b
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -36,13 +36,10 @@ test:
 about:
   home: https://rstudio.github.io/renv
   license: MIT
-  summary: A dependency management toolkit for R. Using 'renv', you can create and manage project-local
-    R libraries, save the state of these libraries to a 'lockfile', and later restore
-    your library as required. Together, these tools can help make your projects more
-    isolated, portable, and reproducible.
+  summary: A dependency management toolkit for R. Using 'renv', you can create and manage project-local R libraries, save the state of these libraries to a 'lockfile', and later restore your library as required. Together, these tools can help make your projects more isolated, portable, and reproducible.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
