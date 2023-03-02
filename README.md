@@ -1,11 +1,11 @@
-About r-renv
-============
+About r-renv-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-renv-feedstock/blob/main/LICENSE.txt)
 
 Home: https://rstudio.github.io/renv
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-renv-feedstock/blob/main/LICENSE.txt)
 
 Summary: A dependency management toolkit for R. Using 'renv', you can create and manage project-local R libraries, save the state of these libraries to a 'lockfile', and later restore your library as required. Together, these tools can help make your projects more isolated, portable, and reproducible.
 
