@@ -1,4 +1,4 @@
-{% set version = "0.17.0" %}
+{% set version = "0.17.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/renv_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/renv/renv_{{ version }}.tar.gz
-  sha256: 8d0a0944b04d556cbb56bc27beb97c6cf40a2c0225d607751e3504fca4cd93ab
+  sha256: 94f8b62846ce44e9c90884ce64a8faa0ff76b009c7a23ed0fb4343cd11836af4
 
 build:
   merge_build_host: true  # [win]
