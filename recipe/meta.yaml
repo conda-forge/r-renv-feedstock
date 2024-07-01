@@ -1,6 +1,5 @@
 {% set version = "1.0.7" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-renv
@@ -13,8 +12,7 @@ source:
   sha256: 7b60b58a23743803ab167f82f78663e86f778947b2bda07afa12689338794507
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
