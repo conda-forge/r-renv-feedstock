@@ -1,4 +1,4 @@
-{% set version = "1.0.10" %}
+{% set version = "1.0.11" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/renv_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/renv/renv_{{ version }}.tar.gz
-  sha256: 6466ec93704c8cf465ad9cc4146baf010f6a9a8e9d2ee3f14847284c16204f84
+  sha256: 57f126d1f80e72894d3ada17dec46462c899f7de7e064cc304a42035d7c8be25
 
 build:
   number: 0
